@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>オークション代行プラン｜エコレクト</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&family=Zen+Maru+Gothic:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="auction">
+<div id="site-header"></div>
+<main>
+  <div class="page-head"><div class="wrap">
+    <span class="eyebrow">AUCTION PLAN</span>
+    <h1>オークション代行プラン</h1>
+    <p>お品物をお預かりして、当店がフリマサイトやネットオークションに代わりに出品します。売れた金額の70%をお客様にお支払いします。</p>
+  </div></div>
+  <div class="wrap crumbs"><ol><li><a href="index.html">トップ</a></li><li>オークション代行プラン</li></ol></div>
+
+  <section class="sec"><div class="wrap">
+    <h2 class="sec-title"><small>RATE</small>売れた金額の 70% をお支払い</h2>
+    <p class="lead-text">フリマサイトの販売手数料は、当店の取り分（30%）に含まれています。お客様の70%から差し引くことはありません。</p>
+    <div class="rate">
+      <div><small>売れた金額</small><b>100%</b></div>
+      <div><small>当店の手数料<br>（フリマサイトの手数料込み）</small><b>30%</b></div>
+      <div class="you"><small>お客様の受け取り</small><b>70%</b></div>
+    </div>
+  </div></section>
+
+  <section class="sec alt"><div class="wrap">
+    <h2 class="sec-title"><small>SIMULATION</small>受け取り金額を計算してみる</h2>
+    <form class="calc" id="calc" onsubmit="return false">
+      <label for="calc-price">売れた金額（予想でもOK）</label>
+      <div class="calc-input"><input type="text" inputmode="numeric" id="calc-price" value="10,000" aria-describedby="calc-help"><span>円</span></div>
+      <p class="note" id="calc-help" style="margin:0">数字を入れると、すぐに計算されます。</p>
+      <dl class="calc-out">
+        <dt>売れた金額</dt><dd id="out-sale">10,000円</dd>
+        <dt>当店の手数料（30%）</dt><dd id="out-fee">3,000円</dd>
+        <dt>お客様の受け取り（70%）</dt><dd class="total" id="out-you">7,000円</dd>
+      </dl>
+    </form>
+  </div></section>
+
+  <section class="sec"><div class="wrap">
+    <h2 class="sec-title"><small>COMPARE</small>買取とオークション代行のちがい</h2>
+    <div class="table-box">
+      <table class="compare">
+        <thead><tr><th></th><th>通常の買取</th><th class="hl">オークション代行</th></tr></thead>
+        <tbody>
+          <tr><th>お金を受け取る時期</th><td>出張はその場で現金、宅配は振込</td><td class="hl">売れてから</td></tr>
+          <tr><th>受け取る金額</th><td>当店の買取価格</td><td class="hl">売れた金額の70%</td></tr>
+          <tr><th>こんな方におすすめ</th><td>すぐに現金にしたい方</td><td class="hl">時間がかかっても高く売りたい方</td></tr>
+          <tr><th>向いている品物</th><td>どんな品物でも</td><td class="hl">人気の品物・コレクター向けの品物</td></tr>
+          <tr><th>出品の手間</th><td>なし</td><td class="hl">なし（撮影・出品・発送は当店が行います）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">どちらがよいか迷う場合は、査定のときにスタッフにご相談ください。両方の金額の目安をお伝えします。</p>
+  </div></section>
+
+  <section class="sec alt"><div class="wrap">
+    <h2 class="sec-title"><small>FLOW</small>オークション代行の流れ</h2>
+    <ol class="flow" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">
+      <li class="step"><h3>お申し込み</h3><p>お電話で「オークション代行希望」とお伝えください。</p></li>
+      <li class="step"><h3>お預かり</h3><p>出張か宅配で品物をお預かりし、出品価格をご相談します。</p></li>
+      <li class="step"><h3>撮影・出品</h3><p>当店で写真を撮り、説明文を書いて出品します。</p></li>
+      <li class="step"><h3>販売・発送</h3><p>売れたら、当店が梱包して購入者に発送します。</p></li>
+      <li class="step"><h3>お支払い</h3><p>取引完了後、売れた金額の70%をお支払いします。</p></li>
+    </ol>
+  </div></section>
+
+  <section class="sec"><div class="wrap">
+    <h2 class="sec-title"><small>GENRE</small>対象ジャンル</h2>
+    <div class="genres" id="genre-list"></div>
+  </div></section>
+
+  <section class="sec alt"><div class="wrap">
+    <p style="text-align:center"><a class="btn btn-main" href="tel:09037175833">電話でオークション代行を申し込む</a></p>
+  </div></section>
+</main>
+<div id="site-cta"></div>
+<div id="site-footer"></div>
+<script src="items.js" charset="utf-8"></script>
+<script src="common.js" charset="utf-8"></script>
+<script>
+  // 対象ジャンルの一覧
+  document.getElementById("genre-list").innerHTML = Object.keys(ITEMS).map(function (k) {
+    var d = ITEMS[k];
+    return '<a class="genre" href="' + d.page + '">' + genreThumb(k) + "<b>" + d.name + "</b><small>" + d.sub + "</small></a>";
+  }).join("");
+
+  // 受け取り金額の計算（売れた金額の70%）
+  var input = document.getElementById("calc-price");
+  function yen(n) { return n.toLocaleString("ja-JP") + "円"; }
+  function calc() {
+    var raw = input.value.replace(/[０-９]/g, function (c) { return String.fromCharCode(c.charCodeAt(0) - 0xFEE0); }).replace(/[^0-9]/g, "");
+    var sale = Number(raw) || 0;
+    var you = Math.floor(sale * 0.7);
+    document.getElementById("out-sale").textContent = yen(sale);
+    document.getElementById("out-fee").textContent = yen(sale - you);
+    document.getElementById("out-you").textContent = yen(you);
+  }
+  input.addEventListener("input", calc);
+  input.addEventListener("blur", function () {
+    var n = Number(input.value.replace(/[^0-9]/g, "")) || 0;
+    input.value = n.toLocaleString("ja-JP");
+  });
+  calc();
+</script>
+</body>
+</html>
