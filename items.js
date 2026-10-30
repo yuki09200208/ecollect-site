@@ -22,7 +22,7 @@ function iconSvg(key, size, color) {
 
 var ITEMS = {
   antique: {
-    name: "骨董品", sub: "陶器・ガラス製品など", en: "ANTIQUE", page: "item-antique.html", img: "img/antique.jpg", guarantee: true,
+    name: "骨董品", sub: "陶器・ガラス製品など", en: "ANTIQUE", page: "item-antique.html", img: "img/2026-10-30_iwachu_nanbu_tetsubin_sq.jpg", guarantee: true,
     lead: "陶器・磁器・ガラス製品・茶道具・掛け軸など、ご実家の蔵や押し入れに眠っている骨董品を一点ずつ丁寧に査定します。",
     tags: ["陶器・磁器", "ガラス製品", "切子・ぎやまん", "茶道具", "掛け軸", "鉄瓶", "漆器", "仏像・仏具", "古時計", "蓄音機"],
     points: [
@@ -42,7 +42,7 @@ var ITEMS = {
     ]
   },
   camera: {
-    name: "カメラ", sub: "フィルム・デジタル・レンズ", en: "CAMERA", page: "item-camera.html", img: "img/camera.jpg", guarantee: true,
+    name: "カメラ", sub: "フィルム・デジタル・レンズ", en: "CAMERA", page: "item-camera.html", img: "img/2026-10-30_hasselblad_907x_cfv100c_sq.jpg", guarantee: true,
     lead: "フィルムカメラ・デジタルカメラ・交換レンズ・二眼レフなど、古いカメラやレンズも動作と状態を見て査定します。",
     tags: ["フィルムカメラ", "一眼レフ", "レンジファインダー", "二眼レフ", "デジタルカメラ", "交換レンズ", "三脚", "8mmカメラ"],
     points: [
@@ -52,7 +52,7 @@ var ITEMS = {
     ]
   },
   record: {
-    name: "レコード・オーディオ", sub: "LP・EP・プレーヤー・アンプ", en: "RECORD & AUDIO", page: "item-record.html", img: "img/record.jpg", guarantee: true,
+    name: "レコード・オーディオ", sub: "LP・EP・プレーヤー・アンプ", en: "RECORD & AUDIO", page: "item-record.html", img: "img/2026-10-30_beatles_in_mono_box_sq.jpg", guarantee: true,
     lead: "LP・EP・帯付きの国内盤から海外盤、レコードプレーヤー・アンプ・スピーカーなどのオーディオ機器まで査定します。",
     tags: ["LP", "EP（シングル）", "帯付き国内盤", "海外盤", "レコードプレーヤー", "アンプ", "スピーカー", "カセットデッキ"],
     points: [
@@ -62,7 +62,7 @@ var ITEMS = {
     ]
   },
   game: {
-    name: "ゲーム・おもちゃ", sub: "レトロゲーム・フィギュア", en: "GAME & TOY", page: "item-game.html", img: "img/game.jpg", guarantee: true,
+    name: "ゲーム・おもちゃ", sub: "レトロゲーム・フィギュア", en: "GAME & TOY", page: "item-game.html", img: "img/2026-10-30_panasonic_q_sl-gc10_sq.jpg", guarantee: true,
     lead: "レトロゲームから最近のゲーム機、ソフト、フィギュア・ブリキのおもちゃ・プラモデルなどを査定します。",
     tags: ["ゲーム機本体", "ゲームソフト", "携帯ゲーム機", "フィギュア", "ブリキのおもちゃ", "プラモデル", "ミニカー", "カード"],
     points: [
@@ -82,7 +82,7 @@ var ITEMS = {
     ]
   },
   accessory: {
-    name: "宝石・アクセサリー", sub: "指輪・ネックレス・ブローチ", en: "JEWELRY", page: "item-accessory.html", img: "img/accessory.jpg", guarantee: true,
+    name: "宝石・アクセサリー", sub: "指輪・ネックレス・ブローチ", en: "JEWELRY", page: "item-accessory.html", img: "img/2026-10-31_emerald_ring_sq.jpg", guarantee: true,
     lead: "宝石の付いた指輪やネックレス、金・プラチナ製品、ブローチ、ヴィンテージアクセサリーまで査定します。",
     tags: ["指輪", "ネックレス", "ブローチ", "イヤリング・ピアス", "ダイヤモンド", "色石", "金・プラチナ", "真珠", "ヴィンテージ品"],
     points: [
