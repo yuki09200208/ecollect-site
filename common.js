@@ -5,7 +5,7 @@
   var page = document.body.getAttribute("data-page") || "";
 
   var nav = [
-    ["items", "取扱ジャンル", "index.html#genres"],
+    ["items", "最低保証", "index.html#guarantee"],
     ["price", "買取事例", "price.html"],
     ["auction", "オークション代行", "2026-10-21_auction.html"],
     ["method", "買取方法", "method-visit.html"],
@@ -51,7 +51,7 @@
     '<footer class="site-footer"><div class="wrap">' +
       '<div class="foot">' +
         "<div><h3>エコレクト</h3><p>〒556-0015 大阪府大阪市浪速区敷津西2-11-12<br>TEL " + TEL + "<br>古物商許可 大阪府公安委員会 第62112R082124号</p></div>" +
-        "<div><h3>取扱ジャンル</h3><ul>" +
+        "<div><h3>ジャンル別のご案内</h3><ul>" +
           genres.map(function (g) { return '<li><a href="' + g[1] + '">' + g[0] + "</a></li>"; }).join("") +
         "</ul></div>" +
         "<div><h3>ご案内</h3><ul>" +
