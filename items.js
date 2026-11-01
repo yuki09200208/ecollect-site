@@ -12,7 +12,8 @@ var ICONS = {
   retro: '<rect x="3" y="8" width="18" height="12" rx="2"/><path d="M7 8l10-5"/><circle cx="9" cy="14" r="3"/><path d="M15 12h3M15 16h3"/>',
   electronics: '<rect x="3" y="4" width="18" height="12" rx="1"/><path d="M8 20h8M12 16v4"/>',
   fishing: '<path d="M3 21L19 3"/><path d="M19 3v10"/><path d="M19 13c0 2.5-1.5 4-3.5 4S12 15.5 12 14"/><circle cx="7" cy="17" r="2.5"/>',
-  bag: '<path d="M4 9h16l-1.5 11h-13z"/><path d="M8.5 9V7a3.5 3.5 0 017 0v2"/><path d="M10 13h4"/>'
+  bag: '<path d="M4 9h16l-1.5 11h-13z"/><path d="M8.5 9V7a3.5 3.5 0 017 0v2"/><path d="M10 13h4"/>',
+  golf: '<path d="M8 21V3l9 4-9 4"/><ellipse cx="12" cy="21" rx="7" ry="1.5"/>'
 };
 
 function iconSvg(key, size, color) {
@@ -140,6 +141,17 @@ var ITEMS = {
       ["箱・替えスプールをそろえる", "リールの元箱や替えスプール、竿の袋や保証書があると評価が上がりやすくなります。"],
       ["ルアーはまとめて", "ルアーや小物は1つでは値段がつきにくくても、まとめると金額をお出しできる場合があります。"]
     ]
+  },
+  golf: {
+    name: "ゴルフ道具", sub: "クラブ・バッグ・用品", en: "GOLF", page: "2026-11-01_item-golf.html",
+    img: "img/2026-11-01_free_golf_bag.jpg", imgNote: "写真はイメージです", guarantee: true,
+    lead: "ドライバー・アイアン・パター・キャディバッグ・ゴルフシューズなど、ゴルフ道具を査定します。古いクラブや使い込んだ道具もご相談ください。",
+    tags: ["ドライバー", "フェアウェイウッド", "ユーティリティ", "アイアンセット", "ウェッジ", "パター", "キャディバッグ", "ゴルフシューズ", "距離計", "ゴルフウェア"],
+    points: [
+      ["汚れを軽く落とす", "クラブの泥や芝は、乾いた布で軽くふいてからお出しください。"],
+      ["ヘッドカバー・付属品をそろえる", "ヘッドカバーや調整用のレンチ、元箱があると評価が上がりやすくなります。"],
+      ["セットはまとめて", "アイアンはセットのまま、バッグと一緒にまとめてお出しいただくと査定がスムーズです。"]
+    ]
   }
 };
 
@@ -147,7 +159,7 @@ var ITEMS = {
 function genreThumb(key) {
   var d = ITEMS[key];
   return d.img
-    ? '<img src="' + d.img + '" alt="">'
+    ? '<img src="' + d.img + '" alt="">' + (d.imgNote ? '<span class="img-note">イメージ</span>' : "")
     : '<span class="genre-icon">' + iconSvg(key, 56) + "</span>";
 }
 
@@ -180,7 +192,8 @@ function resultCard(r) {
 
   var head = d.img
     ? '<div class="page-head with-photo"><img src="' + d.img + '" alt="">' +
-        '<div class="wrap"><span class="eyebrow">' + d.en + "</span><h1>" + d.name + "の買取</h1><p>" + d.lead + "</p></div></div>"
+        '<div class="wrap"><span class="eyebrow">' + d.en + "</span><h1>" + d.name + "の買取</h1><p>" + d.lead + "</p>" +
+        (d.imgNote ? '<p class="head-note">※' + d.imgNote + "</p>" : "") + "</div></div>"
     : '<div class="page-head with-icon"><div class="wrap"><span class="head-icon">' + iconSvg(key, 64, "#fff") + "</span>" +
         '<div><span class="eyebrow">' + d.en + "</span><h1>" + d.name + "の買取</h1><p>" + d.lead + "</p></div></div></div>";
 
@@ -188,11 +201,11 @@ function resultCard(r) {
 
   var others = Object.keys(ITEMS).filter(function (k) { return k !== key; }).map(function (k) {
     var o = ITEMS[k];
-    return '<a class="genre" href="' + o.page + '">' + genreThumb(k) + "<b>" + o.name + "</b></a>";
+    return '<a class="genre" href="' + o.page + '"><span class="genre-photo">' + genreThumb(k) + "</span><b>" + o.name + "</b></a>";
   }).join("");
 
   main.innerHTML = head +
-    '<div class="wrap crumbs"><ol><li><a href="index.html">トップ</a></li><li><a href="index.html#items">取扱ジャンル</a></li><li>' + d.name + "</li></ol></div>" +
+    '<div class="wrap crumbs"><ol><li><a href="index.html">トップ</a></li><li><a href="index.html#genres">取扱ジャンル</a></li><li>' + d.name + "</li></ol></div>" +
 
     (d.guarantee ? '<div class="guarantee-band"><div class="wrap"><b>最低保証</b><span>' + d.name + 'は<strong>1点 1,000円以上</strong>で買い取ります</span><a href="faq.html#guarantee">条件を見る</a></div></div>' : "") +
 

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>エコレクト</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="骨董品・腕時計・カメラ・レコード・着物・釣り道具・ブランドバッグなど12ジャンルの買取専門店。11ジャンルは1点1,000円以上の最低保証とオークション代行プランあり。">
+<meta name="description" content="なんでも買い取る出張・宅配買取のエコレクト。対象12ジャンルは状態が悪くても1点1,000円以上の最低保証。手放すか迷う物はオークション代行も。古物商許可 大阪府公安委員会 第62112R082124号。">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&family=Zen+Maru+Gothic:wght@500;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -15,47 +15,23 @@
 <div id="site-header"></div>
 
 <main>
-  <!-- 切り替わるメイン画像 -->
-  <section class="slider" aria-roledescription="スライド" aria-label="おすすめのご案内">
-    <div class="slides" id="slides">
-      <div class="slide on" aria-label="1枚目（全3枚）">
-        <img src="img/hero.jpg" alt="市場で品物を眺める人たち">
-        <div class="wrap">
-          <span class="kicker">対象11ジャンル</span>
-          <h1>古い物・壊れた物も<br><em>1点1,000円</em>以上で買取</h1>
-          <p>骨董品・腕時計・カメラ・レコード・着物・釣り道具など。古い物、壊れた物もまずはご相談ください。</p>
-          <a class="btn btn-main" href="faq.html#guarantee">最低保証について</a>
-        </div>
-      </div>
-      <div class="slide" aria-label="2枚目（全3枚）">
-        <img src="img/record.jpg" alt="たくさんのレコード">
-        <div class="wrap">
-          <span class="kicker">出張料 0円</span>
-          <h2>重い物・量が多い物は<br><em>出張買取</em>で</h2>
-          <p>スタッフがご自宅まで伺って、その場で査定します。蔵や倉庫の片付けにも。</p>
-          <a class="btn btn-main" href="method-visit.html">出張買取を見る</a>
-        </div>
-      </div>
-      <div class="slide" aria-label="3枚目（全3枚）">
-        <img src="img/camera.jpg" alt="フィルムカメラ">
-        <div class="wrap">
-          <span class="kicker">高く売りたい方に</span>
-          <h2>売れた金額の<em>70%</em>をお支払い<br>オークション代行</h2>
-          <p>撮影・出品・発送はエコレクトが代わりに行います。フリマサイトの手数料は差し引きません。</p>
-          <a class="btn btn-main" href="2026-10-21_auction.html">オークション代行を見る</a>
-        </div>
-      </div>
-    </div>
-    <div class="slider-ui">
-      <button class="arrow" type="button" id="prev" aria-label="前のスライド">‹</button>
-      <button class="dot" type="button" aria-label="1枚目を表示" aria-current="true"></button>
-      <button class="dot" type="button" aria-label="2枚目を表示"></button>
-      <button class="dot" type="button" aria-label="3枚目を表示"></button>
-      <button class="arrow" type="button" id="next" aria-label="次のスライド">›</button>
+  <!-- 最初の画面：強み3つ -->
+  <section class="top-hero" aria-labelledby="top-title">
+    <img src="img/hero.jpg" alt="">
+    <div class="wrap">
+      <p class="top-kicker">出張買取・宅配買取・オークション代行</p>
+      <h1 id="top-title">エコレクトの<em>3つの強み</em></h1>
+      <ol class="strengths">
+        <li><span class="num">1</span><div><b>なんでも<br class="sp">買い取れる</b><small>骨董品から衣類・ガラケーまで</small></div></li>
+        <li><span class="num">2</span><div><b>1点から<br class="sp"><em>最低1,000円</em>保証</b><small>対象ジャンルなら状態が悪くてもOK</small></div></li>
+        <li><span class="num">3</span><div><b>迷う物は<br class="sp">オークション代行</b><small>売れた金額の70%をお支払い</small></div></li>
+      </ol>
+      <a class="btn btn-main top-tel" href="tel:09037175833">電話で無料査定　090-3717-5833</a>
+      <p class="top-hours">受付 9:00〜20:00（年中無休）／査定料・出張料・キャンセル料 0円</p>
     </div>
   </section>
 
-  <!-- メイン画像の真下に並ぶ売り方の帯 -->
+  <!-- 売り方の帯 -->
   <nav class="quick-nav" aria-label="売り方を選ぶ">
     <div class="wrap">
       <a href="method-visit.html"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 6h13v10H1zM14 10h4l3 3v3h-7M5.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM17.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg><span>出張買取<small>ご自宅で査定</small></span></a>
@@ -65,20 +41,64 @@
     </div>
   </nav>
 
-  <div class="guarantee-band"><div class="wrap"><b>最低保証</b><span>対象11ジャンルは<strong>1点 1,000円以上</strong>で買い取ります</span><a href="faq.html#guarantee">条件を見る</a></div></div>
-
-  <section class="sec" id="items">
+  <!-- 強み1：なんでも買い取れる（買取事例とジャンル） -->
+  <section class="sec" id="results">
     <div class="wrap">
-      <h2 class="sec-title"><small>GENRE</small>買い取れる物が多いから、まとめて片付く</h2>
-      <p class="lead-text">骨董品からブランドバッグ、最近の電化製品まで、12ジャンルを1回の査定でまとめて見ます。止まった時計、動かないカメラ、箱のないゲームもご相談ください。</p>
-      <div class="genres" id="genre-list"></div>
+      <h2 class="sec-title"><small>STRENGTH 1</small>なんでも買い取れる</h2>
+      <p class="lead-text">古い物、壊れた物、箱のない物もご相談ください。<b>失礼なお値段は出しません。</b></p>
+      <h3 class="sub-title">買取事例</h3>
+      <div class="results" id="latest"></div>
+      <div class="genre-box" id="genres">
+        <h3>取り扱いジャンル</h3>
+        <div class="genre-links" id="genre-links"></div>
+        <p class="genre-more">他にも<b>図鑑や辞書、ガラケー、衣類、ファッション雑貨</b>も高価買取します。</p>
+      </div>
     </div>
   </section>
 
+  <!-- ここまで買い取れるの？ -->
+  <section class="sec alt" id="gallery">
+    <div class="wrap">
+      <h2 class="sec-title"><small>ANYTHING OK</small>ここまで買い取れるの？</h2>
+      <p class="lead-text">はい、買い取れます。「こんな物は売れないだろう」と思う物こそ、一度お見せください。</p>
+      <div class="gallery">
+        <figure><img src="img/2026-11-01_free_dictionary.jpg" alt="図鑑・辞書" loading="lazy"><figcaption>図鑑・辞書</figcaption></figure>
+        <figure><img src="img/2026-11-01_free_flip_phone.jpg" alt="ガラケー" loading="lazy"><figcaption>ガラケー</figcaption></figure>
+        <figure><img src="img/2026-11-01_free_clothes.jpg" alt="衣類" loading="lazy"><figcaption>衣類</figcaption></figure>
+        <figure><img src="img/2026-11-01_free_leather_bag.jpg" alt="革のバッグ" loading="lazy"><figcaption>革のバッグ</figcaption></figure>
+        <figure><img src="img/2026-11-01_free_shoes.jpg" alt="靴・スニーカー" loading="lazy"><figcaption>靴・スニーカー</figcaption></figure>
+        <figure><img src="img/2026-11-01_free_plush_toys.jpg" alt="ぬいぐるみ" loading="lazy"><figcaption>ぬいぐるみ</figcaption></figure>
+        <figure><img src="img/2026-11-01_free_cassette_player.jpg" alt="カセットプレーヤー" loading="lazy"><figcaption>カセットプレーヤー</figcaption></figure>
+        <figure><img src="img/2026-11-01_free_tableware.jpg" alt="食器" loading="lazy"><figcaption>食器</figcaption></figure>
+        <figure><img src="img/2026-11-01_free_old_books.jpg" alt="古い本" loading="lazy"><figcaption>古い本</figcaption></figure>
+        <figure><img src="img/2026-11-01_free_alarm_clock.jpg" alt="置き時計" loading="lazy"><figcaption>置き時計</figcaption></figure>
+        <figure><img src="img/2026-11-01_free_perfume_bottle.jpg" alt="香水の瓶" loading="lazy"><figcaption>香水の瓶</figcaption></figure>
+        <figure><img src="img/2026-11-01_free_golf_irons.jpg" alt="ゴルフクラブ" loading="lazy"><figcaption>ゴルフクラブ</figcaption></figure>
+      </div>
+      <p class="note" style="text-align:center;margin-top:12px">※写真はイメージです</p>
+    </div>
+  </section>
+
+  <!-- 強み2：最低保証 -->
+  <section class="sec" id="guarantee">
+    <div class="wrap">
+      <h2 class="sec-title"><small>STRENGTH 2</small>1点から最低1,000円保証</h2>
+      <div class="guarantee">
+        <div class="guarantee-seal"><small>1点</small><b>1,000円</b><small>以上</small></div>
+        <div>
+          <h3 class="g-head">このジャンルであれば、状態が悪くても最低保証します</h3>
+          <p>骨董品・腕時計・カメラ・レコード/オーディオ・ゲーム/おもちゃ・着物・宝石/アクセサリー・お酒/ライター・レトロ雑貨/家電/家具・電化製品（製造10年未満）・釣り道具・<b>ゴルフ道具</b>の12ジャンルは、1点1,000円以上で買い取ります。</p>
+          <p class="note">ブランドバッグは最低保証の対象外です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 強み3：オークション代行 -->
   <section class="sec alt" id="auction">
     <div class="wrap">
-      <h2 class="sec-title"><small>AUCTION PLAN</small>高く売りたい方には、オークション代行</h2>
-      <p class="lead-text">撮影・出品・発送はすべてエコレクトが行います。フリマサイトの手数料はこちらの取り分に含まれているので、お客様は売れた金額の70%をそのまま受け取れます。</p>
+      <h2 class="sec-title"><small>STRENGTH 3</small>手放すか迷う物は、オークション代行</h2>
+      <p class="lead-text">「すぐ売るのはもったいない」と思う物は、エコレクトが代わりにフリマサイトやオークションに出品します。撮影・出品・発送もすべてお任せください。</p>
       <div class="rate">
         <div><small>売れた金額</small><b>100%</b></div>
         <div><small>エコレクトの手数料<br>（フリマサイトの手数料込み）</small><b>30%</b></div>
@@ -88,28 +108,49 @@
     </div>
   </section>
 
-  <section class="sec" id="reason">
-    <div class="wrap" style="max-width:860px">
-      <h2 class="sec-title"><small>5 REASONS</small>エコレクトが選ばれる5つの理由</h2>
-      <ol class="reasons5">
-        <li><div><h3>対象ジャンルは1点1,000円以上の最低保証</h3><p>対象の11ジャンル（ブランドバッグ以外）のお品物は、古い物や壊れた物でも1点1,000円以上で買い取ります。</p></div></li>
-        <li><div><h3>買取とオークション代行を選べる</h3><p>すぐに現金にしたい方は買取、時間がかかっても高く売りたい方はオークション代行。査定のときに両方の目安をお伝えします。</p></div></li>
-        <li><div><h3>出張・宅配で、外出しなくていい</h3><p>ご自宅まで伺う出張買取と、箱に詰めて送るだけの宅配買取。重い物や量が多い物も運ばずに済みます。</p></div></li>
-        <li><div><h3>手数料はすべて無料</h3><p>査定料・出張料・キャンセル料は0円。金額に納得できなければ、お断りいただいて大丈夫です。</p></div></li>
-        <li><div><h3>12ジャンルをまとめて査定</h3><p>骨董品、着物、レコード、釣り道具、ブランドバッグ、電化製品などを1回で見ます。ご実家や倉庫の片付けにも向いています。</p></div></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="sec alt" id="results">
+  <!-- 安心して使っていただくために（会社の透明さ） -->
+  <section class="sec" id="trust">
     <div class="wrap">
-      <h2 class="sec-title"><small>RESULTS</small>買取事例</h2>
-      <div class="results" id="latest"></div>
-      <p class="case-copy">あなたの大切なものを、<br>大切にしてくれる人へ。<small>お預かりしたお品物は、次に大切にしてくださる方のもとへお届けします。</small></p>
+      <h2 class="sec-title"><small>TRUST</small>安心してご利用いただくために</h2>
+      <p class="lead-text">出張買取が不安な方にも安心していただけるよう、会社の情報とお約束をすべて公開しています。</p>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <h3>会社の情報</h3>
+          <table class="info-table">
+            <tr><th>社名</th><td>エコレクト</td></tr>
+            <tr><th>所在地</th><td>〒556-0015<br>大阪府大阪市浪速区敷津西2-11-12</td></tr>
+            <tr><th>電話</th><td><a href="tel:09037175833">090-3717-5833</a></td></tr>
+            <tr><th>受付</th><td>9:00〜20:00（年中無休）</td></tr>
+            <tr><th>古物商許可</th><td>大阪府公安委員会<br>第62112R082124号</td></tr>
+          </table>
+        </div>
+        <div class="trust-card">
+          <h3>エコレクトのお約束</h3>
+          <ul class="check-list">
+            <li>失礼なお値段は出しません</li>
+            <li>査定料・出張料・キャンセル料はすべて0円</li>
+            <li>金額にご納得いただけなければ、お断りいただいて大丈夫です</li>
+            <li>ご依頼のない押し売り・押し買いはしません</li>
+            <li>金額の理由を、わかりやすくご説明します</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cooling" id="cooling-off">
+        <h3>出張買取は「クーリング・オフ」ができます</h3>
+        <p>出張買取（法律では「訪問購入」）は、特定商取引法の決まりにより、ご契約のあとでも<b>無条件でキャンセル</b>できます。</p>
+        <ol class="cooling-steps">
+          <li><b>8日間</b><span>契約書面をお受け取りになった日を含めて8日間</span></li>
+          <li><b>理由はいりません</b><span>キャンセル料もかかりません</span></li>
+          <li><b>品物はお手元に</b><span>この間は、品物のお引き渡しをお断りいただけます</span></li>
+        </ol>
+        <p><b>お申し出の方法：</b>書面（はがき等）または電子メールなどで、下記までご連絡ください。<br>エコレクト　〒556-0015 大阪府大阪市浪速区敷津西2-11-12　電話 090-3717-5833</p>
+        <p class="note">※自動車（2輪をのぞく）・大型の家電・家具・書籍・有価証券・CD/DVD/ゲームソフト類は、法律でクーリング・オフの対象外とされています。宅配買取はクーリング・オフの対象外です。</p>
+      </div>
     </div>
   </section>
 
-  <section class="sec" id="flow">
+  <section class="sec alt" id="flow">
     <div class="wrap">
       <h2 class="sec-title"><small>FLOW</small>買取の流れ</h2>
       <ol class="flow">
@@ -118,15 +159,17 @@
         <li class="step"><h3>ご成約</h3><p>金額にご納得いただけたらご成約です。</p></li>
         <li class="step"><h3>お支払い</h3><p>出張はその場で現金、宅配は振込でお支払いします。</p></li>
       </ol>
+      <p class="case-copy">あなたの大切なものを、<br>大切にしてくれる人へ。<small>お預かりしたお品物は、次に大切にしてくださる方のもとへお届けします。</small></p>
     </div>
   </section>
 
-  <section class="sec alt" id="faq">
+  <section class="sec" id="faq">
     <div class="wrap">
       <h2 class="sec-title"><small>FAQ</small>よくある質問</h2>
       <div class="faq">
-        <details><summary>最低保証の1,000円は、どんな物でも対象ですか？</summary><p>取扱ジャンルのうち、ブランドバッグをのぞく11ジャンルのお品物が対象です。くわしい条件は<a href="faq.html#guarantee">よくある質問</a>をご覧ください。</p></details>
+        <details><summary>壊れていても最低保証の1,000円になりますか？</summary><p>はい。対象の12ジャンル（ブランドバッグ以外）であれば、状態が悪くても1点1,000円以上で買い取ります。</p></details>
         <details><summary>オークション代行と買取は、どちらがお得ですか？</summary><p>すぐに現金にしたい方は買取、時間がかかっても高く売りたい方はオークション代行がおすすめです。査定のときに両方の目安をお伝えします。</p></details>
+        <details><summary>契約したあとでキャンセルできますか？</summary><p>出張買取は、契約書面をお受け取りになった日から8日間、クーリング・オフ（無条件のキャンセル）ができます。くわしくは<a href="#cooling-off">クーリング・オフの説明</a>をご覧ください。</p></details>
       </div>
     </div>
   </section>
@@ -143,7 +186,6 @@
         <a class="welcome-card" href="method-delivery.html"><span class="lab">箱に詰めて送るだけ</span><b>宅配買取</b><span>外出不要・送料0円</span></a>
         <a class="welcome-card" href="2026-10-21_auction.html"><span class="lab">高く売りたい方に</span><b>オークション代行</b><span>売れた金額の70%をお支払い</span></a>
       </div>
-      <p style="text-align:center;margin-top:24px"><a class="btn btn-main" href="tel:09037175833">電話で無料査定</a></p>
     </div>
   </section>
 </main>
@@ -156,34 +198,19 @@
 <script src="items.js" charset="utf-8"></script>
 <script src="common.js" charset="utf-8"></script>
 <script>
-  // 取扱ジャンルの一覧と、買取事例（6件）
-  document.getElementById("genre-list").innerHTML = Object.keys(ITEMS).map(function (k) {
-    var d = ITEMS[k];
-    return '<a class="genre" href="' + d.page + '">' + genreThumb(k) + "<b>" + d.name + "</b><small>" + d.sub + "</small>" +
-      (d.guarantee ? '<span class="tag-guarantee">最低保証1,000円</span>' : "") + "</a>";
-  }).join("");
-  document.getElementById("latest").innerHTML = RESULTS.filter(function (r) { return r.real; }).slice(0, 4).map(resultCard).join("");
-
-  // メイン画像の切り替え（6秒ごと。マウスを乗せている間と、動きを減らす設定の時は止める）
+  // 買取事例：トップには腕時計・宝石を出さず、身近なジャンルから1ジャンル1件ずつ、金額の高い順に4件
   (function () {
-    var slides = document.querySelectorAll(".slide"), dots = document.querySelectorAll(".dot");
-    var i = 0, timer = null;
-    var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    function show(n) {
-      i = (n + slides.length) % slides.length;
-      slides.forEach(function (s, k) { s.classList.toggle("on", k === i); s.setAttribute("aria-hidden", k === i ? "false" : "true"); });
-      dots.forEach(function (d, k) { d.setAttribute("aria-current", k === i ? "true" : "false"); });
-    }
-    function start() { if (!still) { stop(); timer = setInterval(function () { show(i + 1); }, 6000); } }
-    function stop() { if (timer) clearInterval(timer); timer = null; }
-    dots.forEach(function (d, k) { d.addEventListener("click", function () { show(k); start(); }); });
-    document.getElementById("prev").addEventListener("click", function () { show(i - 1); start(); });
-    document.getElementById("next").addEventListener("click", function () { show(i + 1); start(); });
-    var box = document.querySelector(".slider");
-    box.addEventListener("mouseenter", stop); box.addEventListener("mouseleave", start);
-    box.addEventListener("focusin", stop); box.addEventListener("focusout", start);
-    show(0); start();
+    var seen = {}, pick = [];
+    RESULTS.filter(function (r) { return r.real && r.genre !== "watch" && r.genre !== "accessory"; }).forEach(function (r) {
+      if (pick.length < 4 && !seen[r.genre]) { seen[r.genre] = 1; pick.push(r); }
+    });
+    document.getElementById("latest").innerHTML = pick.map(resultCard).join("");
   })();
+  // 事例の下のジャンル一覧（名前だけ。押すとジャンルのページへ）
+  document.getElementById("genre-links").innerHTML = Object.keys(ITEMS).map(function (k) {
+    var d = ITEMS[k];
+    return '<a href="' + d.page + '">' + d.name + (d.guarantee ? '<small>最低保証</small>' : "") + "</a>";
+  }).join("");
 </script>
 </body>
 </html>
