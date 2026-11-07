@@ -663,3 +663,11 @@ body { background: var(--paper); }
 .rate-split .fee b { font-size: 26px; }
 .rate-note { margin: 10px 0 0; text-align: center; font-size: 13px; color: var(--sub); }
 @media (max-width: 600px) { .rate-split .you b { font-size: 36px; } .rate-split .fee b { font-size: 22px; } .rate-split small { font-size: 12px; } }
+
+/* 2026-11-07：出張買取の流れ（わかりやすい字：大きく・濃く・番号は 01〜04） */
+.flow-lead { font-weight: 700; color: var(--ink); }
+.flow-visit .step::before { content: none; }
+.flow-visit .step { border: 2px solid var(--line); }
+.flow-visit .no { display: inline-block; font-family: var(--font-display); font-size: 26px; font-weight: 700; color: var(--orange); line-height: 1; }
+.flow-visit h3 { font-size: 20px; line-height: 1.45; margin: 8px 0 8px; }
+.flow-visit p { font-size: 16px; line-height: 1.85; color: var(--ink); }
