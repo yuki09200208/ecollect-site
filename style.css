@@ -606,3 +606,27 @@ body { background: var(--paper); }
   .surprise-list li { font-size: 14px; padding: 5px 12px; }
 }
 @media (max-width: 700px) { .strengths li:nth-child(3) br.sp { display: inline; } }
+
+/* 2026-11-05：「安心して任せられる買取店であるために。」 */
+.trust-message { max-width: 760px; margin: 0 auto 28px; background: var(--cream); border-left: 6px solid var(--orange); border-radius: 12px; padding: 24px 26px; }
+.trust-message h3 { margin: 0 0 14px; font-size: clamp(20px, 3.6vw, 26px); }
+.trust-message p { margin: 0 0 12px; line-height: 1.9; }
+.trust-message p:last-child { margin-bottom: 0; }
+.trust-message .em { font-weight: 700; color: var(--orange-dark); }
+
+/* 2026-11-07：チラシの中身（処分する前に・商品一覧・他店で断られた・5つのお約束） */
+.consult-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 0 0 36px; }
+.consult-card { background: var(--paper); border: 1px solid var(--line); border-top: 5px solid var(--orange); border-radius: 12px; padding: 18px 18px 16px; }
+.consult-card h4 { margin: 0 0 10px; font-size: 16px; line-height: 1.6; }
+.consult-card h4 span { display: inline-block; margin-right: 8px; padding: 2px 12px; border-radius: 20px; background: var(--orange); color: #fff; font-size: 15px; }
+.consult-card p { margin: 0; line-height: 1.85; font-size: 15px; }
+@media (max-width: 760px) { .consult-grid { grid-template-columns: 1fr; } }
+.refused-box { max-width: 680px; margin: 24px auto 0; text-align: center; background: var(--orange-soft); border-radius: 12px; padding: 18px 16px; }
+.refused-box p { margin: 0 0 6px; }
+.refused-box b { font-size: clamp(17px, 3.4vw, 21px); color: var(--orange-dark); }
+.promise-list { margin: 0; padding: 0; list-style: none; counter-reset: promise; display: grid; gap: 12px; }
+.promise-list li { counter-increment: promise; position: relative; padding-left: 40px; }
+.promise-list li::before { content: counter(promise); position: absolute; left: 0; top: 1px; width: 28px; height: 28px; border-radius: 50%; background: var(--orange); color: #fff; font-weight: 700; display: grid; place-items: center; font-size: 15px; }
+.promise-list b { display: block; }
+.promise-list span { display: block; font-size: 14px; color: var(--sub); line-height: 1.75; }
+.promise-foot { margin: 14px 0 0; font-weight: 700; line-height: 1.8; }

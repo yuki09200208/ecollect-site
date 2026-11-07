@@ -17,7 +17,7 @@
     ["カメラ", "item-camera.html"], ["レコード・オーディオ", "item-record.html"],
     ["ゲーム・おもちゃ", "item-game.html"], ["着物", "2026-10-21_item-kimono.html"],
     ["宝石・アクセサリー", "item-accessory.html"], ["ブランドバッグ", "2026-10-31_item-bag.html"], ["お酒・ライター", "2026-10-21_item-liquor.html"],
-    ["レトロ雑貨・家電・家具", "2026-10-21_item-retro.html"], ["電化製品（製造10年未満）", "2026-10-21_item-electronics.html"], ["釣り道具", "2026-10-30_item-fishing.html"], ["ゴルフ道具", "2026-11-01_item-golf.html"]
+    ["レトロ雑貨・家電・家具", "2026-10-21_item-retro.html"], ["電化製品（製造10年未満）", "2026-10-21_item-electronics.html"], ["釣り道具", "2026-10-30_item-fishing.html"], ["ゴルフ道具", "2026-11-01_item-golf.html"], ["スマホ", "2026-11-05_item-phone.html"]
   ];
   function navLinks() {
     return nav.map(function (n) {
