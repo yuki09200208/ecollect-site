@@ -671,3 +671,73 @@ body { background: var(--paper); }
 .flow-visit .no { display: inline-block; font-family: var(--font-display); font-size: 26px; font-weight: 700; color: var(--orange); line-height: 1; }
 .flow-visit h3 { font-size: 20px; line-height: 1.45; margin: 8px 0 8px; }
 .flow-visit p { font-size: 16px; line-height: 1.85; color: var(--ink); }
+
+/* 2026-11-07：黒い所を緑に（オレンジはそのまま。たくみさん「黒は基本NG」）。色は --base の3つで決まる */
+:root { --base: #1d5b2c; --base-2: #256b36; --base-line: #3d7f4c; --base-rgb: 18, 64, 30; }
+.btn-dark, .site-footer, .guarantee-band b, .site-header, .sp-nav, .page-head,
+.guarantee-seal, .cta, .slider, .welcome, .top-hero { background: var(--base); }
+.quick-nav, .genre-icon, .genre:nth-child(3n+2) .genre-icon, .genre:nth-child(3n) .genre-icon, .welcome-card { background: var(--base-2); }
+.sp-nav, .quick-nav { border-top-color: var(--base-line); }
+.sp-nav a { border-bottom-color: var(--base-line); }
+.quick-nav a:hover { background: var(--base-line); }
+.welcome-card { border-color: var(--base-line); }
+.page-head.with-photo::after { background: linear-gradient(90deg, rgba(var(--base-rgb), .9), rgba(var(--base-rgb), .3)); }
+.slide::after { background: linear-gradient(90deg, rgba(var(--base-rgb), .9) 0%, rgba(var(--base-rgb), .55) 45%, rgba(var(--base-rgb), .05) 100%); }
+@media (max-width: 600px) { .slide::after { background: linear-gradient(180deg, rgba(var(--base-rgb), .35), rgba(var(--base-rgb), .9)); } }
+.img-note { background: rgba(var(--base-rgb), .85); }
+.logo-text small, .head-tel small, .top-hours, .site-footer { color: #e3eee5; }
+.rate-split, .rate-total::after, .rate { border-color: var(--base); }
+.rate-split .fee { border-left-color: var(--base); }
+
+/* 2026-11-08 整理サービスのページ・トップの追加 */
+.more-link { margin-top: 14px !important; }
+.bag-catch { text-align: center; margin: 18px auto 0; max-width: 760px; background: var(--paper); border: 2px solid var(--orange); border-radius: 12px; padding: 14px 16px; }
+.bag-catch b { display: block; font-size: clamp(17px, 2.6vw, 21px); line-height: 1.6; color: var(--ink); }
+.bag-catch a { display: inline-block; margin-top: 6px; font-weight: 700; color: var(--orange-dark); }
+br.sp { display: none; }
+@media (max-width: 700px) { br.sp { display: inline; } }
+.welcome-methods { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 700px) { .welcome-methods { grid-template-columns: 1fr; } }
+.cost-graph { max-width: 640px; margin: 0 auto; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 22px 18px 18px; overflow: hidden; }
+.cg-title { text-align: center; margin: 0 0 18px; color: var(--sub); font-weight: 700; }
+.cg-chart { display: flex; align-items: flex-end; justify-content: center; gap: 14px; border-bottom: 3px solid var(--line); padding: 0 6px; position: relative; }
+.cg-col { display: flex; flex-direction: column; align-items: center; width: 110px; }
+.cg-bar { height: 220px; width: 76px; display: flex; flex-direction: column; justify-content: flex-end; }
+.cg-cost, .cg-buy { display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; writing-mode: vertical-rl; letter-spacing: .15em; }
+.cg-cost { background: var(--base, #1d5b2c); color: #fff; }
+.cg-cost.full { height: 100%; }
+.cg-cost.part { height: 30%; }
+.cg-buy { height: 70%; border: 2px dashed var(--orange); border-bottom: 0; color: var(--orange-dark); writing-mode: horizontal-tb; letter-spacing: 0; font-size: 14px; background: var(--orange-soft); }
+.cg-lab { margin: 8px 0 -34px; font-size: 13px; font-weight: 700; white-space: nowrap; color: var(--sub); }
+.cg-lab.ours { color: var(--orange-dark); font-size: 15px; }
+.cg-arrow { align-self: center; font-size: 28px; color: var(--orange); font-weight: 700; }
+.cg-say { align-self: center; border: 2px solid var(--base, #1d5b2c); color: var(--base, #1d5b2c); border-radius: 50%; padding: 18px 12px; font-weight: 700; font-size: 13px; text-align: center; line-height: 1.5; }
+.cg-normal { margin: 48px auto 6px; width: fit-content; border: 2px dashed var(--sub); padding: 6px 16px; font-weight: 700; }
+.cg-normal b { font-size: 22px; }
+.cg-down { text-align: center; margin: 4px 0; font-weight: 700; }
+.cg-down::after { content: ""; display: block; margin: 4px auto 0; border: 18px solid transparent; border-top-color: var(--line); width: 0; height: 0; border-bottom: 0; }
+.cg-result { background: #fff6d6; margin: 6px -18px 10px; padding: 14px 10px; text-align: center; }
+.cg-calc { margin: 0; font-weight: 700; font-size: 18px; }
+.cg-total { margin: 2px 0 0; font-weight: 700; font-size: 20px; }
+.cg-total b { font-size: clamp(38px, 8vw, 52px); color: var(--orange-dark); margin: 0 4px; }
+@media (max-width: 480px) { .cg-col { width: 86px; } .cg-bar { width: 62px; height: 190px; } .cg-say { display: none; } }
+.price-table-wrap { max-width: 640px; margin: 0 auto; }
+.price-table { width: 100%; border-collapse: collapse; background: var(--paper); border-radius: 12px; overflow: hidden; }
+.price-table caption { font-weight: 700; font-size: 18px; margin-bottom: 10px; }
+.price-table th, .price-table td { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align: left; }
+.price-table thead th { background: var(--base, #1d5b2c); color: #fff; font-size: 14px; }
+.price-table td { font-weight: 700; color: var(--orange-dark); font-size: 17px; }
+.price-notes { list-style: none; padding: 0; margin: 14px 0; font-size: 14px; color: var(--sub); display: grid; gap: 6px; line-height: 1.8; }
+.price-notes b { color: var(--ink); }
+.price-catch { text-align: center; font-weight: 700; font-size: 17px; }
+.price-table td { word-break: keep-all; }
+@media (max-width: 700px) { .price-table th, .price-table td { padding: 10px 8px; font-size: 14px; } .price-table td { font-size: 15px; } }
+@media (min-width: 701px) and (max-width: 1240px) { .gnav a { font-size: 13px; } }
+@media (min-width: 701px) and (max-width: 1240px) { .gnav { gap: 12px; } }
+.price-table { table-layout: fixed; }
+.price-table thead th { word-break: normal; }
+.logo-mark { flex-shrink: 0; }
+.head-tel b { white-space: nowrap; }
+@media (min-width: 701px) and (max-width: 1240px) { .head-tel small { display: none; } .logo-text small { display: none; } }
+.price-table-wrap .price-table { min-width: 0; }
+@media (min-width: 701px) and (max-width: 1360px) { .gnav { gap: 12px; } .gnav a { font-size: 13px; } .head-tel small { display: none; } .logo-text small { display: none; } .logo-text { white-space: nowrap; } }

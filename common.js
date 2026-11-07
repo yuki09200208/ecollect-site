@@ -9,6 +9,7 @@
     ["price", "買取事例", "price.html"],
     ["auction", "オークション代行", "2026-10-21_auction.html"],
     ["method", "買取方法", "method-visit.html"],
+    ["seiri", "生前・遺品整理やお引越しなど", "2026-11-08_seiri.html", "遺品整理・お引越し"],
     ["faq", "よくある質問", "faq.html"],
     ["shop", "会社概要", "shop.html"]
   ];
@@ -20,9 +21,9 @@
     ["レトロ雑貨・家電・家具", "2026-10-21_item-retro.html"], ["電化製品（製造10年未満）", "2026-10-21_item-electronics.html"], ["釣り道具", "2026-10-30_item-fishing.html"], ["ゴルフ道具", "2026-11-01_item-golf.html"], ["スマホ", "2026-11-05_item-phone.html"],
     ["ブランドバッグ（保証の対象外）", "2026-10-31_item-bag.html"]
   ];
-  function navLinks() {
+  function navLinks(pc) {
     return nav.map(function (n) {
-      return '<a href="' + n[2] + '"' + (page === n[0] ? ' aria-current="page"' : "") + ">" + n[1] + "</a>";
+      return '<a href="' + n[2] + '"' + (page === n[0] ? ' aria-current="page"' : "") + ">" + (pc && n[3] ? n[3] : n[1]) + "</a>";
     }).join("");
   }
 
@@ -30,7 +31,7 @@
     '<header class="site-header"><div class="wrap head">' +
       '<a class="logo" href="index.html"><span class="logo-mark">エコ</span>' +
       '<span class="logo-text">エコレクト<small>骨董・時計・カメラ・レコード・着物ほか</small></span></a>' +
-      '<nav class="gnav" aria-label="メインメニュー">' + navLinks() + "</nav>" +
+      '<nav class="gnav" aria-label="メインメニュー">' + navLinks(true) + "</nav>" +
       '<div class="head-tel"><small>受付 9:00〜20:00（年中無休）</small><b>' + TEL + "</b></div>" +
       '<button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="sp-nav">メニュー</button>' +
     "</div>" +
@@ -58,7 +59,7 @@
         "<div><h3>ご案内</h3><ul>" +
           '<li><a href="price.html">買取事例</a></li><li><a href="2026-10-21_auction.html">オークション代行プラン</a></li>' +
           '<li><a href="method-visit.html">出張買取</a></li>' +
-          '<li><a href="method-delivery.html">宅配買取</a></li><li><a href="flow.html">買取の流れ</a></li>' +
+          '<li><a href="method-delivery.html">宅配買取</a></li><li><a href="2026-11-08_seiri.html">生前・遺品整理やお引越しなど</a></li><li><a href="flow.html">買取の流れ</a></li>' +
           '<li><a href="faq.html">よくある質問</a></li><li><a href="shop.html">会社概要</a></li></ul></div>' +
       "</div>" +
       '<p class="copy">© エコレクト　写真：Unsplash</p>' +
