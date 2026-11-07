@@ -630,3 +630,19 @@ body { background: var(--paper); }
 .promise-list b { display: block; }
 .promise-list span { display: block; font-size: 14px; color: var(--sub); line-height: 1.75; }
 .promise-foot { margin: 14px 0 0; font-weight: 700; line-height: 1.8; }
+
+/* 2026-11-07：チームの指摘（売り先・処分に関わるサービス・メニューの折り返し） */
+.gnav a { white-space: nowrap; }
+.sell-route { max-width: 760px; margin: 0 auto 28px; background: var(--paper); border: 2px solid var(--orange); border-radius: 12px; padding: 20px 22px; text-align: center; }
+.sell-route-catch { margin: 0 0 10px; line-height: 1.5; }
+.sell-route-catch span { display: block; font-weight: 700; font-size: clamp(17px, 3.4vw, 20px); }
+.sell-route-catch b { display: block; color: var(--orange-dark); font-size: clamp(20px, 4.4vw, 26px); }
+.sell-route p:last-child { margin: 0; line-height: 1.9; }
+.sell-route strong { color: var(--orange-dark); }
+.more-services { max-width: 760px; margin: -12px auto 36px; background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; }
+.more-services h3 { margin: 0 0 12px; font-size: 17px; text-align: center; }
+.more-services ul { margin: 0 0 10px; padding: 0; list-style: none; display: grid; gap: 6px; }
+.more-services li { padding-left: 22px; position: relative; line-height: 1.7; }
+.more-services li::before { content: ""; position: absolute; left: 4px; top: .6em; width: 9px; height: 9px; border-radius: 50%; background: var(--orange); }
+.more-services p { margin: 0; font-weight: 700; text-align: center; }
+@media (max-width: 700px) { br.pc { display: none; } }
