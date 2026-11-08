@@ -19,7 +19,7 @@
     ["ゲーム・おもちゃ", "item-game.html"], ["着物", "2026-10-21_item-kimono.html"],
     ["宝石・アクセサリー", "item-accessory.html"], ["お酒・ライター", "2026-10-21_item-liquor.html"],
     ["レトロ雑貨・家電・家具", "2026-10-21_item-retro.html"], ["製造から10年以内の電化製品", "2026-10-21_item-electronics.html"], ["釣り道具", "2026-10-30_item-fishing.html"], ["ゴルフ道具", "2026-11-01_item-golf.html"], ["スマホ", "2026-11-05_item-phone.html"],
-    ["ブランドバッグ（保証の対象外）", "2026-10-31_item-bag.html"]
+    ["ブランドバッグ", "2026-10-31_item-bag.html"]
   ];
   function navLinks(pc) {
     return nav.map(function (n) {

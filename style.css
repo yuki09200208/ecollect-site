@@ -745,7 +745,7 @@ br.sp { display: none; }
 /* 2026-11-08 たくみさん：いつも出る上の帯だけ緑とオレンジ。他は背景ベージュ・文字は黒・強調はオレンジ */
 :root { --beige: #f4ede1; --beige-2: #ebe1d0; --beige-line: #d9ccb6; }
 .site-footer, .page-head, .guarantee-seal, .cta, .slider, .welcome, .top-hero, .btn-dark, .guarantee-band b { background: var(--beige); color: var(--ink); }
-.btn-dark, .guarantee-band b { background: var(--ink); color: #fff; }
+.btn-dark, .guarantee-band b { background: var(--base, #1d5b2c); color: #fff; }
 .top-hero > img { opacity: .14; }
 .top-hero, .top-hero h1, .top-hours, .page-head, .page-head h1, .page-head p, .cta h2, .cta p, .cta .tel-num { color: var(--ink); }
 .page-head { border-bottom: 1px solid var(--beige-line); }
@@ -774,7 +774,7 @@ br.sp { display: none; }
 .site-footer a { color: var(--ink); }
 .site-footer a:hover { color: var(--orange-dark); }
 .site-footer .copy { color: var(--sub); }
-.cg-cost, .price-table-wrap .price-table thead th { background: var(--ink); }
+.cg-cost, .price-table-wrap .price-table thead th { background: var(--base, #1d5b2c); }
 .cg-say { border-color: var(--orange); color: var(--orange-dark); }
 .rate-split, .rate-total::after, .rate { border-color: var(--ink); }
 .rate-split .fee { border-left-color: var(--ink); }
