@@ -124,7 +124,7 @@ var ITEMS = {
     ]
   },
   electronics: {
-    name: "電化製品", sub: "製造から10年未満", en: "ELECTRONICS", page: "2026-10-21_item-electronics.html", img: "img/electronics.jpg", guarantee: true,
+    name: "電化製品", chip: "製造から10年以内の電化製品", sub: "製造から10年未満", en: "ELECTRONICS", page: "2026-10-21_item-electronics.html", img: "img/electronics.jpg", guarantee: true,
     lead: "製造から10年未満の電化製品を査定します。生活家電・キッチン家電・パソコン・スマートフォン・テレビなどが対象です。",
     tags: ["テレビ", "パソコン", "タブレット", "スマートフォン", "生活家電", "キッチン家電", "美容家電", "オーディオ家電"],
     points: [

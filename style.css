@@ -778,3 +778,12 @@ br.sp { display: none; }
 .cg-say { border-color: var(--orange); color: var(--orange-dark); }
 .rate-split, .rate-total::after, .rate { border-color: var(--ink); }
 .rate-split .fee { border-left-color: var(--ink); }
+
+/* 2026-11-09 新しいロゴ・手数料の注意書き */
+.logo-img { display: block; height: 52px; width: auto; border-radius: 6px; }
+@media (max-width: 480px) { .logo-img { height: 44px; } }
+.foot-logo { display: block; width: 220px; height: auto; border-radius: 8px; margin: 0 0 10px; }
+.rate-note { color: var(--ink); font-weight: 700; font-size: 15px; }
+.nw { display: inline-block; }
+@media (min-width: 701px) and (max-width: 1500px) { .head-tel small { display: none; } }
+.logo-img { flex-shrink: 0; }

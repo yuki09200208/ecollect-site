@@ -24,7 +24,7 @@
       <ol class="strengths">
         <li><span class="num">1</span><div><b>どんなものでも<br class="sp">お買取可能</b><small>骨董品から衣類・ガラケーまで</small></div></li>
         <li><span class="num">2</span><div><b>1点から<br class="sp"><em>最低1,000円</em>保証</b><small>対象ジャンルは状態が悪くても大丈夫です</small></div></li>
-        <li><span class="num">3</span><div><b>お悩みの物は<br class="sp">オークション代行</b><small>売れた金額の70%をお支払いいたします</small></div></li>
+        <li><span class="num">3</span><div><b>選べる買取方法<br><span class="nw">お悩みの物は</span><span class="nw">オークション代行</span></b></div></li>
       </ol>
       <a class="btn btn-main top-tel" href="tel:09037175833">電話で無料査定　090-3717-5833</a>
       <p class="top-hours">受付 9:00〜20:00（年中無休）／査定料・出張料・キャンセル料 0円</p>
@@ -171,14 +171,14 @@
         </div>
       </div>
       <div class="genre-links" id="genres"></div>
-      <p class="bag-catch"><b>ブランドバッグなどのファッション雑貨も<br class="sp">高価買取致します！</b><a href="2026-10-31_item-bag.html">ブランドバッグなどのご案内</a></p>
+      <p class="bag-catch"><b><span class="nw">ブランドバッグなどの</span><span class="nw">ファッション雑貨も</span><br class="sp">高価買取致します！</b><a href="2026-10-31_item-bag.html">ブランドバッグなどのご案内</a></p>
     </div>
   </section>
 
   <!-- 強み3：オークション代行 -->
   <section class="sec" id="auction">
     <div class="wrap">
-      <h2 class="sec-title"><small>STRENGTH 3</small>お悩みのお品物は、オークション代行</h2>
+      <h2 class="sec-title"><small>STRENGTH 3</small>選べる買取方法<br><span class="nw">お悩みのものは</span><span class="nw">オークション代行が</span><span class="nw">おすすめです</span></h2>
       <p class="lead-text">思い出の詰まったお品物や、長年大切にしてきたコレクション。<br>「もう使わない。でも簡単には手放せない。安く手放すのはもったいない…」<br>そんなお品物には、<strong>オークション代行</strong>という選択肢があります。</p>
       <div class="rate-bar">
         <div class="rate-total"><span>売れた金額</span><b>100%</b></div>
@@ -304,7 +304,7 @@
   })();
   // 最低保証の見出しの下のジャンル（押すとジャンルのページへ）
   document.getElementById("genres").innerHTML = Object.keys(ITEMS).filter(function (k) { return ITEMS[k].guarantee; }).map(function (k) {
-    return '<a href="' + ITEMS[k].page + '">' + ITEMS[k].name + "</a>";
+    return '<a href="' + ITEMS[k].page + '">' + (ITEMS[k].chip || ITEMS[k].name) + "</a>";
   }).join("");
   // 写真の横スクロール：左右のボタンで1枚分ずつ動かす
   (function () {

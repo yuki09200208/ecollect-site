@@ -18,7 +18,7 @@
     ["カメラ", "item-camera.html"], ["レコード・オーディオ", "item-record.html"],
     ["ゲーム・おもちゃ", "item-game.html"], ["着物", "2026-10-21_item-kimono.html"],
     ["宝石・アクセサリー", "item-accessory.html"], ["お酒・ライター", "2026-10-21_item-liquor.html"],
-    ["レトロ雑貨・家電・家具", "2026-10-21_item-retro.html"], ["電化製品（製造10年未満）", "2026-10-21_item-electronics.html"], ["釣り道具", "2026-10-30_item-fishing.html"], ["ゴルフ道具", "2026-11-01_item-golf.html"], ["スマホ", "2026-11-05_item-phone.html"],
+    ["レトロ雑貨・家電・家具", "2026-10-21_item-retro.html"], ["製造から10年以内の電化製品", "2026-10-21_item-electronics.html"], ["釣り道具", "2026-10-30_item-fishing.html"], ["ゴルフ道具", "2026-11-01_item-golf.html"], ["スマホ", "2026-11-05_item-phone.html"],
     ["ブランドバッグ（保証の対象外）", "2026-10-31_item-bag.html"]
   ];
   function navLinks(pc) {
@@ -29,8 +29,7 @@
 
   var header =
     '<header class="site-header"><div class="wrap head">' +
-      '<a class="logo" href="index.html"><span class="logo-mark">エコ</span>' +
-      '<span class="logo-text">エコレクト<small>骨董・時計・カメラ・レコード・着物ほか</small></span></a>' +
+      '<a class="logo" href="index.html"><img class="logo-img" src="img/2026-11-09_ecollect_logo.jpg" width="720" height="240" alt="出張買取・生前,遺品整理 エコレクト"></a>' +
       '<nav class="gnav" aria-label="メインメニュー">' + navLinks(true) + "</nav>" +
       '<div class="head-tel"><small>受付 9:00〜20:00（年中無休）</small><b>' + TEL + "</b></div>" +
       '<button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="sp-nav">メニュー</button>' +
@@ -52,7 +51,7 @@
   var footer =
     '<footer class="site-footer"><div class="wrap">' +
       '<div class="foot">' +
-        "<div><h3>エコレクト</h3><p>〒556-0015 大阪府大阪市浪速区敷津西2-11-12<br>TEL " + TEL + "<br>古物商許可 大阪府公安委員会 第62112R082124号</p></div>" +
+        '<div><img class="foot-logo" src="img/2026-11-09_ecollect_logo.jpg" width="720" height="240" alt="エコレクト"><h3>エコレクト</h3><p>〒556-0015 大阪府大阪市浪速区敷津西2-11-12<br>TEL ' + TEL + '<br>古物商許可 大阪府公安委員会 第62112R082124号</p></div>' +
         "<div><h3>最低保証ジャンル</h3><ul>" +
           genres.map(function (g) { return '<li><a href="' + g[1] + '">' + g[0] + "</a></li>"; }).join("") +
         "</ul></div>" +
