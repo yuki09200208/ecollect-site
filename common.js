@@ -2,6 +2,8 @@
 (function () {
   var TEL = "090-3717-5833";
   var TELLINK = "tel:09037175833";
+  var LINELINK = "https://lin.ee/NG96uzH";
+  var LINEBTN = '<a class="btn btn-line" href="' + LINELINK + '" target="_blank" rel="noopener">LINEで相談・査定</a>';
   var page = document.body.getAttribute("data-page") || "";
 
   var nav = [
@@ -41,17 +43,18 @@
   var cta =
     '<section class="cta"><div class="wrap">' +
       "<h2>まずはお気軽に無料査定</h2>" +
-      "<p>対象ジャンルは<b>1点1,000円以上の最低保証</b>つき。ご相談・お申し込みはお電話でどうぞ。</p>" +
+      "<p>対象ジャンルは<b>1点1,000円以上の最低保証</b>つき。ご相談・お申し込みはお電話・LINEでどうぞ。</p>" +
       '<div class="cta-btns">' +
-        '<a class="btn btn-main" href="' + TELLINK + '">電話で無料査定</a>' +
+        '<a class="btn btn-main" href="' + TELLINK + '">電話で無料査定</a>' + LINEBTN +
       "</div>" +
+      '<div class="line-qr"><img src="img/2026-11-09_line_qr.svg" width="120" height="120" alt="LINEのお問い合わせのQRコード"><span>スマホのカメラで読み取ると<br>LINEで相談できます</span></div>' +
       '<p class="tel-num">お電話でのご相談　<b>' + TEL + "</b><br>受付 9:00〜20:00（年中無休）</p>" +
     "</div></section>";
 
   var footer =
     '<footer class="site-footer"><div class="wrap">' +
       '<div class="foot">' +
-        '<div><img class="foot-logo" src="img/2026-11-09_ecollect_logo.jpg" width="720" height="240" alt="エコレクト"><h3>エコレクト</h3><p>〒556-0015 大阪府大阪市浪速区敷津西2-11-12<br>TEL ' + TEL + '<br>古物商許可 大阪府公安委員会 第62112R082124号</p></div>' +
+        '<div><img class="foot-logo" src="img/2026-11-09_ecollect_logo.jpg" width="720" height="240" alt="エコレクト"><h3>エコレクト</h3><p>〒556-0015 大阪府大阪市浪速区敷津西2-11-12<br>TEL ' + TEL + '<br>古物商許可 大阪府公安委員会 第62112R082124号</p><p class="foot-line"><a href="' + LINELINK + '" target="_blank" rel="noopener"><img src="img/2026-11-09_line_qr.svg" width="84" height="84" alt="LINEのお問い合わせのQRコード"><span>LINEでお問い合わせ</span></a></p></div>' +
         "<div><h3>最低保証ジャンル</h3><ul>" +
           genres.map(function (g) { return '<li><a href="' + g[1] + '">' + g[0] + "</a></li>"; }).join("") +
         "</ul></div>" +
@@ -64,7 +67,7 @@
       '<p class="copy">© エコレクト　写真：Unsplash</p>' +
     "</div></footer>" +
     '<div class="fixed-cta">' +
-      '<a class="btn btn-main" href="' + TELLINK + '">電話で無料査定（' + TEL + '）</a>' +
+      '<a class="btn btn-main" href="' + TELLINK + '">電話で無料査定</a>' + LINEBTN.replace("LINEで相談・査定", "LINEで相談") +
     "</div>";
 
   function put(id, html) {
