@@ -264,7 +264,7 @@ function resultCard(r) {
     "</div></section>" +
 
     '<section class="sec alt"><div class="wrap auction-mini">' +
-      "<div><h2>すぐに売らずに、高く売りたい方へ</h2><p>フリマサイトやオークションで、エコレクトが代わりに出品します。売れた金額の<b>70%</b>をお支払いします。</p></div>" +
+      "<div><h2>すぐに売らずに、高く売りたい方へ</h2><p>フリマサイトやオークションで、エコレクトが代わりに出品します。お品物に合わせて販売先を選び、売れなければ手数料は<b>0円</b>です。</p></div>" +
       '<a class="btn btn-main" href="2026-10-21_auction.html">オークション代行プランを見る</a>' +
     "</div></section>" +
 
