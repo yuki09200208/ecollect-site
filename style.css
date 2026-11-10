@@ -812,3 +812,10 @@ br.sp { display: none; }
 .fee-list { list-style: none; padding: 0; margin: 0 0 12px; display: grid; gap: 10px; }
 .fee-list li { background: var(--cream); border-radius: 10px; padding: 12px 14px; }
 .fee-list li b { display: block; } .fee-list li span { display: block; color: var(--sub); }
+
+/* 2026-11-10 夜 スマホで見出しが変な所で切れる・重なるのを直す */
+.auc-card h3, .cooling h3 { line-height: 1.45; letter-spacing: .02em; }
+@media (max-width: 700px) {
+  .auc-card h3, .cooling h3 { font-size: 19px; }
+  .auc-card, .cooling { padding: 18px 16px; }
+}
